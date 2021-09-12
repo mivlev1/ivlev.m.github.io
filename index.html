@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol type="1" start="1">
+        <li id="First">
+            <a href="http://example.com">абсолютная ссылка на главную страницу example.com</a>
+        </li>
+        <li id="Second">
+            <a href="https://example.com">абсолютная ссылка на example.com в протоколе https</a>
+        </li>
+        <li id="Third">
+            <a href="ftp://ftp.intel.com/hranilishe/1.txt">FTP 1</a>
+        </li>
+        <li>
+            <a href="ftp://login:pass@ftp.intel.com/hranilishe/1.txt">FTP 2</a>
+        </li>
+    
+        <li>
+            <a href="https://ru.wikipedia.org/wiki/Овенден,_Грэм#Семья"> ссылка на фрагмент страницы некоторого сайта</a>
+        </li>
+        <li>
+            <a href="#First">ссылка на фрагмент текущей страницы</a>
+        </li>
+        <li>
+            <a href="https://intelshop.ru/catalog/cpu?page=1&perpage=10">url с двумя параметрами</a>
+        </li>
+        <li>
+            <a href="#First" title="Первое">Первое</a><br>
+            <a href="#Second" title="Второе">Второе</a><br>
+            <a href="#Third" title="Третье">Третье</a>
+        </li>
+        <li>
+            <a>Ссылка без href</a>
+        </li>
+        <li>
+            <a href="">Ссылка с пустым href</a>
+        </li>
+        <li>
+            <a href="https://yandex.ru" rel="nofollow">Запрещен переход поисковикам</a>
+        </li>
+        <li>
+            <a href="https://yandex.ru" rel="noindex">Запрещена для индексации</a>
+        </li>
+        <li>
+            <p>Посмотрите <a href="https://ru.wikipedia.org/wiki/Ссылка_(программирование)#Примеры_реализаций_ссылок">примеры</a> реализации ссылок в разных ЯП</p>
+        </li>
+        <li>
+            <a href="https://kubsu.ru"><img src="img/kubsu_logo.png" alt="logo"></a>
+        </li>
+        <li>
+            <img src="img/15_zd.png" usemap="#task" alt="Круглая и прямоугольная ссылка">
+            <map id="task" name="task">
+                <area shape="circle" coords="60,43,41" href="https://ru.wikipedia.org/wiki/Круг" alt="Окружность">
+                <area shape="rect" coords="136,47,266,86" href="https://ru.wikipedia.org/wiki/Прямоугольник" alt="Прямоугольник">
+            </map>
+        </li>
+        <li>
+            <a href="./other.html">Относительная ссылка в текущем каталоге</a>
+        </li>
+        <li>
+            <a href="./about/other.html">Относительная ссылка в каталоге about</a>
+        </li>
+        <li>
+            <a href="../other.html">Относительная ссылка в каталоге уровнем выше</a>
+        </li>
+        <li>
+            <a href="../../other.html">Относительная ссылка в каталоге на два уровня выше</a>
+        </li>
+        <li>
+            <a href="/">Сокращенная на главную</a>
+        </li>
+        <li>
+            <a href="/about.html">Сокращенная на внутреннюю</a>
+        </li>
+
+
+    </ol>
+    <h1>ФОРМА</h1>
+    <form action="адресс для отправки данных">
+        
+        <label> 
+            Введите имя:<br>
+            <input name="field-name-1" value="Имя">
+        </label><br>
+        
+        <label>
+            Введите email:<br>
+            <input type="email" name="field-email" value="example@google.com">
+        </label><br>
+        
+        <label>
+            Введите дату рождения:<br>
+            <input type="date" name="field-date" value="2021-09-10">
+        </label><br>
+        Выберите пол:<br>
+        <label>
+           <input type="radio" checked="checked" name="radio-group-1" value="Мужской">
+           Мужской
+        </label>
+        <label>
+            <input type="radio" name="radio-group-1" value="Женский">
+            Женский
+        </label><br>
+        Выберите количество конечностей:<br>
+        <label>
+            <input type="radio" name="radio-group-2" value="2 конечности">
+            2 конечности
+        </label>
+        <label>
+            <input type="radio" name="radio-group-2" value="3 конечности">
+            3 конечности
+        </label>
+        <label>
+        <input type="radio" name="radio-group-2" checked="checked" value="4 конечности">
+        4 конечности
+        </label><br>
+        Выберите свою сверхспособность:<br>
+        <label>
+            <select name="field-name-2" multiple="multiple">
+                <option value="Значение 1" selected="selected">Бессмертье</option>
+                <option value="Значение 2">Левитация</option>
+                <option value="Значение 3" selected="selected">Сверхскорость</option>
+            </select>
+        </label><br>
+        <label>
+            Расскажите о себе:<br>
+            <textarea name="field-name-3">Биография</textarea>
+        </label><br>
+        <label>
+            <input type="checkbox" name="checkbox" value="С контрактом ознакомлен(а)">
+            С контрактом ознакомлен(а)
+        </label><br>
+        <label>
+            <input type="submit" name="submit" value="Отправить">
+        </label>
+    </form>
+
+</body>
+</html>
